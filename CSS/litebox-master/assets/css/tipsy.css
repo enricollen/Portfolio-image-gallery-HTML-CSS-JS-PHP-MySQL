@@ -1,0 +1,60 @@
+/*
+//	tipsy
+//	version 1.0.0a
+//	(c) 2008-2010 jason frame [jason@onehackoranother.com]
+//	released under the MIT license
+*/
+
+	.tipsy {
+		padding: 5px;
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 9px;
+		line-height: normal;
+		position: absolute;
+		z-index: 100000;
+	}   
+
+	.tipsy-inner {
+		max-width: 300px;
+		padding: 6px;
+		background-color: #000;
+		color: #FFF;
+		text-align: center;
+	}
+
+	.tipsy-inner {
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	.tipsy-inner img {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.tipsy-arrow {
+		width: 0;
+		height: 0;
+		border: 5px dashed #000;
+		line-height: 0;
+		position: absolute;
+	}
+
+	.tipsy-arrow-n { border-bottom-color: #000; }
+	.tipsy-arrow-s { border-top-color: #000; }
+	.tipsy-arrow-e { border-left-color: #000; }
+	.tipsy-arrow-w { border-right-color: #000; }
+
+	.tipsy-n .tipsy-arrow { top: 0; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+	.tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+	.tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+	.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+	.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+	.tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+	.tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+	.tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+
+	@media only screen and (max-width: 767px) {
+		.tipsy { display: none !important; visibility: hidden !important; }
+	}

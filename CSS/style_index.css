@@ -1,0 +1,37 @@
+body{
+
+	font-family: sans-serif;
+
+	margin: 0;
+
+}
+
+
+
+/*sfondo homepage*/
+
+header{
+
+  height: 90vh;
+
+  background-size: cover; /*prova anche 100% 100%*/
+
+  background-position: center;
+
+}
+
+
+
+#entra{
+
+  cursor: pointer;
+
+}
+
+
+
+#bacheca_index{
+
+	background-image: url("../img_varie/mountain_bg.jpg");
+
+}

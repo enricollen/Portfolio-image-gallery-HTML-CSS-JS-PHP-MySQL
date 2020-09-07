@@ -1,0 +1,64 @@
+.centra_testo{
+    text-align: center;
+    color: #111; font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 0 72px;
+}
+
+.card{
+     width: 70%;
+     display: inline-block;
+     box-shadow: 0.34vh 0.34vh 20px black;
+     border-radius: 0.85vh; 
+     margin: 5% 15%;
+}
+
+.allinea{
+    display: inline-block;
+    text-align: left;
+}
+
+#chi_siamo{
+    color: black;
+    text-align: center;
+    padding: 3vh 3vh;
+}
+
+#mia_foto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+    padding: 3vh 3vh;
+}
+
+@media only screen and (max-width: 600px) {
+  #mia_foto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+    padding: 2vh 1vh;
+}
+}
+
+p{
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+#contenitore{
+    margin-top: 1vh;
+    width: 50%;
+  margin: 0 auto;
+}

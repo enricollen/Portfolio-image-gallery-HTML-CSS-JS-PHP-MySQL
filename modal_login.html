@@ -1,0 +1,53 @@
+<div id="id01" class="modal">
+
+  
+
+  <form class="modal-content animate" action="e_login.php" method="POST">
+
+    <div class="imgcontainer">
+
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+      <img src="img_varie/avatar_admin.png" alt="Avatar" id='admin_avatar' class="avatar">
+
+    </div>
+
+
+
+    <div class="container_modal">
+
+      <label for="uname"><b>Username</b></label>
+
+      <input type="text" placeholder="Inserisci Username" name="username" required>
+
+
+
+      <label for="psw"><b>Password</b></label>
+
+      <input type="password" placeholder="Inserisci Password" name="password" required>
+
+        
+
+      <button type="submit">Login</button>
+
+      <label>
+
+        <input type="checkbox" checked="checked" name="remember"> Ricordami
+
+      </label>
+
+    </div>
+
+
+
+    <div class="container_modal" style="background-color:#f1f1f1">
+
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Annulla</button>
+
+      <span class="psw">Password <a href="#">dimenticata?</a></span>
+
+    </div>
+
+  </form>
+
+</div>

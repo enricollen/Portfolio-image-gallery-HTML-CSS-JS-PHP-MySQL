@@ -1,0 +1,237 @@
+#logo {
+height : 90px;
+width : 90px;
+}
+div, h1, span, img, p, section {
+margin : 0;
+padding : 0;
+border : 0;
+font-size : 100%;
+font : inherit;
+vertical-align : baseline;
+}
+article, aside, details, figcaption, figure, hgroup, section {
+display : block;
+}
+blockquote, q {
+quotes : none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+content : '';
+content : none;
+}
+table {
+border-collapse : collapse;
+border-spacing : 0;
+}
+* {
+box-sizing : border-box;
+}
+p {
+line-height : 2.0em;
+}
+h1 {
+font-size : 3.0em;
+color : #fff;
+line-height : 140px;
+}
+/*img {
+height : 187px;
+width : 290px;
+}*/
+.pull-right {
+float : right;
+}
+.pull-left {
+float : left;
+}
+header {
+padding : 30px 20px;
+color : #ffffff;
+}
+.btn-download {
+background : rgb(24 42 60 / 0.92);
+color : rgb(124 142 160 / 0.92);
+padding : 20px 50px;
+display : inline-block;
+border-radius : 5px;
+}
+.btn-download:hover {
+background : rgb(94 112 130 / 0.92);
+}
+.wrapper {
+max-width : 1000px;
+margin : 0 auto;
+}
+.wrapper:before, .wrapper:after {
+content : '';
+display : table;
+clear : both;
+}
+footer {
+margin-top : 30px;
+background : rgb(24 42 60 / 0.92);
+color : rgb(124 142 160 / 0.92);
+padding : 20px 0;
+text-align : left;
+font-size : 0.9em;
+}
+@keyframes anima {
+from {
+margin-top : -50px;
+opacity : 0;
+}
+to {
+margin : auto;
+opacity : 1;
+}
+}
+@media screen, (max-width:560px) {
+.wrapper {
+padding : 20px;
+}
+}
+.pic {
+max-width : 300px;
+max-height : 200px;
+position : relative;
+overflow : hidden;
+margin : 10px;
+display : inline-block;
+animation : anima 2s;
+backface-visibility : hidden;
+}
+.pic-3d {
+transform-style : preserve-3d;
+}
+.pic-caption {
+cursor : pointer;
+position : absolute;
+width : 100%;
+height : 100%;
+background : rgb(44 62 80 / 0.92);
+padding : 10px;
+text-align : center;
+opacity : 0;
+}
+.pic-image {
+transform : scale(1.1);
+}
+.pic:hover .pic-image {
+transform : scale(1);
+}
+.pic-title {
+font-size : 1.8em;
+}
+a, a:hover, .pic .pic-image, .pic-caption, .pic:hover .pic-caption, .pic:hover img {
+transition : all 0.5s ease;
+}
+.pic:hover .bottom-to-top, .pic:hover .top-to-bottom, .pic:hover .left-to-right, .pic:hover .right-to-left, .pic:hover .rotate-in, .pic:hover .rotate-out, .pic:hover .open-up, .pic:hover .open-down, .pic:hover .open-left, .pic:hover .open-right, .pic:hover .come-left, .pic:hover .come-right {
+opacity : 1;
+user-select : none;
+}
+.bottom-to-top {
+top : 50%;
+left : 0;
+}
+.pic:hover .bottom-to-top {
+top : 0;
+left : 0;
+}
+.top-to-bottom {
+bottom : 50%;
+left : 0;
+}
+.pic:hover .top-to-bottom {
+left : 0;
+bottom : 0;
+}
+.left-to-right {
+top : 0;
+right : 50%;
+}
+.pic:hover .left-to-right {
+right : 0;
+top : 0;
+}
+.right-to-left {
+top : 0;
+left : 50%;
+}
+.pic:hover .right-to-left {
+left : 0;
+top : 0;
+}
+.rotate-in {
+transform : rotate(90deg) scale(0.1);
+top : 0;
+left : 0;
+}
+.pic:hover .rotate-in {
+transform : rotate(360deg) scale(1);
+}
+.rotate-out {
+transform : rotate(90deg) scale(3);
+top : 0;
+left : 0;
+}
+.pic:hover .rotate-out {
+transform : rotate(360deg) scale(1);
+}
+.open-down {
+transform : rotateX(-180deg);
+top : 0;
+left : 0;
+}
+.pic:hover .open-down {
+transform : rotateX(0);
+}
+.open-up {
+transform : rotateX(180deg);
+top : 0;
+left : 0;
+}
+.pic:hover .open-up {
+transform : rotateX(0);
+}
+.open-left {
+transform : rotateY(180deg);
+left : 0;
+top : 0;
+}
+.pic:hover .open-left {
+transform : rotateY(0deg);
+}
+.open-right {
+transform : rotateY(-180deg);
+left : 0;
+top : 0;
+}
+.pic:hover .open-right {
+transform : rotateY(0deg);
+}
+.come-left {
+transform : rotateY(90deg) rotateX(90deg);
+left : 0;
+top : 0;
+}
+.pic:hover .come-left {
+transform : rotateY(0) rotateX(0);
+}
+.come-right {
+transform : rotateY(-90deg) rotateX(-90deg);
+left : 0;
+top : 0;
+}
+.pic:hover .come-right {
+transform : rotateY(0) rotateX(0);
+}
+@media screen, (max-width:560px) {
+.pic {
+max-width : 400px;
+max-height : 300px;
+display : block;
+animation : none;
+margin : 10px auto;
+}
+}

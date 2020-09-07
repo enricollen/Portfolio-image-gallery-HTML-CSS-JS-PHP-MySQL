@@ -1,0 +1,16 @@
+body{
+	font-family: sans-serif;
+	margin: 0;
+}
+
+/*sfondo homepage*/
+header{
+  height: 90vh;
+  background-image: url("../img_varie/bg_dark.jpg");
+  background-size: cover; /*prova anche 100% 100%*/
+  background-position: center;
+}
+
+#entra{
+  cursor: pointer;
+}

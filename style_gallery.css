@@ -1,0 +1,23 @@
+.gallery{
+	margin: 3vh 5vh;
+}
+
+.gallery img{
+	width: 300px;
+	height: 300px;
+	padding: 7px;
+	filter: grayscale(80%);
+	transition: 1s;
+}
+
+.gallery img:hover{
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
+
+#no_data_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
