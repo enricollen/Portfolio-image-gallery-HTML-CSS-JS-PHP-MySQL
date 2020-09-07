@@ -1,0 +1,2 @@
+# Portfolio-image-site-HTML-CSS-JS-PHP-MySQL
+A portfolio site mockup written in html, css, js, php and MySQL. I also developed an image folder manager, and a image caption manager, which makes a lot easier to manage, edit, delete and upload your photos. I set user/psw for admin panel as 'admin/admin' by default, you can change it editing values in "admin" MySQL table. For DB connecting parameters go to the following files: 1. database_connection.php 2. files/gestore_cartelle.php 3. files/action.php 4. files/upload.php.
